@@ -34,6 +34,5 @@ final class Recipes__Powered_by_FetchTests: XCTestCase {
         
         //Assert
         XCTAssertTrue(sut.tableViewOutlet.dataSource === sut)
-        
     }
 }
