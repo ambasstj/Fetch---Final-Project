@@ -55,6 +55,7 @@ as! DishCell
        
         let mealID = mealPH[indexPath.row].idMeal
         networkRequests?.performRequest(with: (networkRequests?.idurl ?? "") + mealID)
+        print((networkRequests?.idurl ?? "") + mealID)
         performSegue(withIdentifier: K.Segues.loadedCard, sender: self)
         
     }

@@ -49,52 +49,52 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func newUserButtonPressed(_ sender: UIButton) {
         
-        let registerAlertController = UIAlertController(
-            title: "Register a new account",
-            message: "Complete the fields below",
-            preferredStyle: .alert
-        )
-        
-        registerAlertController.addTextField { UITextField in
-            UITextField.placeholder = "First Name"
-        }
-        registerAlertController.addTextField { UITextField in
-            UITextField.placeholder = "Last Name"
-        }
-        registerAlertController.addTextField { UITextField in
-            UITextField.placeholder = "Email address"
-            UITextField.keyboardType = .emailAddress
-        }
-        registerAlertController.addTextField { UITextField in
-            UITextField.placeholder = "Password"
-            UITextField.isSecureTextEntry = true
-        }
-        
-        let createAccountButton = UIAlertAction(
-            title: "Create account ",
-            style: .default) {_ in
-                
-                let errorAlertController = UIAlertController(
-                    title: "Error",
-                    message: "Please enter a valid email address and password",
-                    preferredStyle: .alert
-                )
-                
-                Auth.auth().createUser(
-                    withEmail: registerAlertController.textFields?[2].text ?? "",
-                    password: registerAlertController.textFields?[3].text ?? ""
-                ) { Authresult, error in
-                    if let e = error {
-                        print (e.localizedDescription)
-                        self.present(errorAlertController, animated: true)
-                    } else {
-                        self.performSegue(withIdentifier: K.Segues.loginSeque, sender: self)
-                    }
-                }
-            }
-        registerAlertController.addAction(createAccountButton)
-        self.present(registerAlertController, animated: true)
-    }
-}
+        /*    let registerAlertController = UIAlertController(
+         title: "Register a new account",
+         message: "Complete the fields below",
+         preferredStyle: .alert
+         )
+         
+         registerAlertController.addTextField { UITextField in
+         UITextField.placeholder = "First Name"
+         }
+         registerAlertController.addTextField { UITextField in
+         UITextField.placeholder = "Last Name"
+         }
+         registerAlertController.addTextField { UITextField in
+         UITextField.placeholder = "Email address"
+         UITextField.keyboardType = .emailAddress
+         }
+         registerAlertController.addTextField { UITextField in
+         UITextField.placeholder = "Password"
+         UITextField.isSecureTextEntry = true
+         }
+         
+         let createAccountButton = UIAlertAction(
+         title: "Create account ",
+         style: .default) {_ in
+         
+         let errorAlertController = UIAlertController(
+         title: "Error",
+         message: "Please enter a valid email address and password",
+         preferredStyle: .alert
+         )
+         
+         Auth.auth().createUser(
+         withEmail: registerAlertController.textFields?[2].text ?? "",
+         password: registerAlertController.textFields?[3].text ?? ""
+         ) { Authresult, error in
+         if let e = error {
+         print (e.localizedDescription)
+         self.present(errorAlertController, animated: true)
+         } else {*/
+        self.performSegue(withIdentifier: K.Segues.loginSeque, sender: self)
+        /* }
+         }
+         }
+         registerAlertController.addAction(createAccountButton)
+         self.present(registerAlertController, animated: true)
+         }*/
+    }}
 
 
