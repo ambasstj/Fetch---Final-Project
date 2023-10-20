@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC8E01EC2AE1E8A400F19A98 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E01EA2AE1E8A400F19A98 /* CustomTableViewCell.swift */; };
+		AC8E01ED2AE1E8A400F19A98 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8E01EB2AE1E8A400F19A98 /* CustomTableViewCell.xib */; };
 		AC9C12982AD9CA3600C1AE8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C12972AD9CA3600C1AE8B /* Constants.swift */; };
 		AC9C129A2ADB194B00C1AE8B /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C12992ADB194B00C1AE8B /* RecipesTableViewController.swift */; };
 		AC9C129F2ADB36F500C1AE8B /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C129D2ADB36F500C1AE8B /* DishCell.swift */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC8E01EA2AE1E8A400F19A98 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AC8E01EB2AE1E8A400F19A98 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		AC9C12972AD9CA3600C1AE8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC9C12992ADB194B00C1AE8B /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		AC9C129D2ADB36F500C1AE8B /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			children = (
 				AC9C129D2ADB36F500C1AE8B /* DishCell.swift */,
 				AC9C129E2ADB36F500C1AE8B /* DishCell.xib */,
+				AC8E01EA2AE1E8A400F19A98 /* CustomTableViewCell.swift */,
+				AC8E01EB2AE1E8A400F19A98 /* CustomTableViewCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			files = (
 				ACBF5A172AD9980000215D59 /* LaunchScreen.storyboard in Resources */,
 				ACBF5A142AD9980000215D59 /* Assets.xcassets in Resources */,
+				AC8E01ED2AE1E8A400F19A98 /* CustomTableViewCell.xib in Resources */,
 				AC9C12A02ADB36F500C1AE8B /* DishCell.xib in Resources */,
 				ACBF5A122AD997FF00215D59 /* Main.storyboard in Resources */,
 				ACBF5A582AD99D8400215D59 /* GoogleService-Info.plist in Resources */,
@@ -343,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */,
+				AC8E01EC2AE1E8A400F19A98 /* CustomTableViewCell.swift in Sources */,
 				ACB06A6B2ADD8C6100BBC6AF /* RecipeCardController.swift in Sources */,
 				ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */,
 				ACB06A642ADCAACC00BBC6AF /* DessertApiModel.swift in Sources */,

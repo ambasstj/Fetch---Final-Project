@@ -17,4 +17,8 @@ struct K{
         static let loadedCard = "Segue3"
     }
     
+    struct CellIds {
+        
+        static let customcell = "CustomCell"
+    }
 }

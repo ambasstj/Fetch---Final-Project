@@ -15,7 +15,6 @@ protocol NetworkRequestsDelegate {
 }
 
 
-
 struct NetworkRequests {
     
     let dessertsurl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert"
@@ -37,11 +36,11 @@ struct NetworkRequests {
                 if let safeData = data {
                     
                     if urlString == dessertsurl{
-                        let dessertArray = self.parseJSON(safeData)
+                        let dessertArray = self.parseDessertCategoryJSON(safeData)
                         self.delegate?.didPopulateArray(desserts: dessertArray)
                     }
                     if urlString.contains("lookup"){
-                        let infoArray = self.parseJSON2(safeData)
+                        let infoArray = self.parseMealByIDJSON(safeData)
                         self.delegate?.didFetchIDinfo(recipes: infoArray)
                     }
                     }
@@ -50,7 +49,7 @@ struct NetworkRequests {
         }
     }
     
-    func parseJSON(_ rawSafeData: Data) -> [Meals] {
+    func parseDessertCategoryJSON(_ rawSafeData: Data) -> [Meals] {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(DessertApiModel.self, from: rawSafeData)
@@ -63,7 +62,7 @@ struct NetworkRequests {
         }
     }
     
-    func parseJSON2(_ rawSafeData: Data) -> [MealInfo] {
+    func parseMealByIDJSON(_ rawSafeData: Data) -> [MealInfo] {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(DishIDApiModel.self, from: rawSafeData)

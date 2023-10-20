@@ -49,7 +49,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func newUserButtonPressed(_ sender: UIButton) {
         
-        /*    let registerAlertController = UIAlertController(
+           let registerAlertController = UIAlertController(
          title: "Register a new account",
          message: "Complete the fields below",
          preferredStyle: .alert
@@ -87,14 +87,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
          if let e = error {
          print (e.localizedDescription)
          self.present(errorAlertController, animated: true)
-         } else {*/
+         } else {
         self.performSegue(withIdentifier: K.Segues.loginSeque, sender: self)
-        /* }
+         }
          }
          }
          registerAlertController.addAction(createAccountButton)
          self.present(registerAlertController, animated: true)
-         }*/
-    }}
+         }
+    }
 
 
